@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "declaration": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["es2016", "dom"],
+    "module": "commonjs",
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "pretty": true,
+    "sourceMap": false,
+    "strict": true,
+    "target": "es2016",
+    "rootDir": "src",
+    "outDir": "build"
+  },
+  "include": [
+    "src/*.ts"
+  ],
+  "compileOnSave": false,
+  "formatCodeOptions": {
+    "baseIndentSize": 0,
+    "indentSize": 2,
+    "tabSize": 2,
+    "newLineCharacter": "\n",
+    "convertTabsToSpaces": true,
+    "insertSpaceAfterCommaDelimiter": true,
+    "insertSpaceAfterSemicolonInForStatements": true,
+    "insertSpaceBeforeAndAfterBinaryOperators": true,
+    "insertSpaceAfterKeywordsInControlFlowStatements": true,
+    "insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+    "insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
+    "insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+    "insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,
+    "placeOpenBraceOnNewLineForFunctions": false,
+    "placeOpenBraceOnNewLineForControlBlocks": false
+  }
+}
