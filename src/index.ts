@@ -5,7 +5,7 @@ export function readLineStream(
   xhr: XMLHttpRequest,
   onLine: ( line: string ) => void,
   onDone: () => void = noop,
-  onError: ( error: any ) => void = logError,
+  onError: ( error: any ) => void = logError
 ) {
 
   let seenBytes = 0,
@@ -28,7 +28,7 @@ export function readLineStream(
         const lines = newData.split( '\n' );
         lines.shift();
         buffer = lines.pop() || '';
-        lines.map( l => onLine( l ) );
+        lines.forEach( l => onLine( l ) );
 
       } else {
         buffer += newData;

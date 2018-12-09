@@ -14,7 +14,7 @@ function readLineStream(xhr, onLine, onDone = noop, onError = logError) {
                 const lines = newData.split('\n');
                 lines.shift();
                 buffer = lines.pop() || '';
-                lines.map(l => onLine(l));
+                lines.forEach(l => onLine(l));
             }
             else {
                 buffer += newData;
